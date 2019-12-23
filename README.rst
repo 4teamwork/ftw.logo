@@ -30,7 +30,7 @@ PNG. Install imagemagick with librsvg. Also don't install imagemagick version 7.
 
 .. code-block:: sh
 
-     brew install imagemagick@6 --with-librsvg
+     brew install imagemagick@6
      brew link imagemagick@6 --force
 
 
