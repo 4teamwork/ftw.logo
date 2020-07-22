@@ -23,7 +23,7 @@ class AbstractConfig(object):
 
     base = None
     logo = None
-    mobile = None
+    mobile_logo = None
     favicon = None
     primary_logo_scale = None
 
@@ -36,7 +36,7 @@ class AbstractConfig(object):
         if 'logo' in kwargs:
             self.logo = Image(filename=kwargs['logo'])
         if 'mobile' in kwargs:
-            self.mobile = Image(filename=kwargs['mobile'])
+            self.mobile_logo = Image(filename=kwargs['mobile'])
         if 'favicon' in kwargs:
             self.favicon = Image(filename=kwargs['favicon'])
 
@@ -50,7 +50,7 @@ class AbstractConfig(object):
         self.cachekey = get_cachekey_from_blob(
             self.base.make_blob(),
             self.logo and self.logo.make_blob() or None,
-            self.mobile and self.mobile.make_blob() or None,
+            self.mobile_logo and self.mobile_logo.make_blob() or None,
             self.favicon and self.favicon.make_blob() or None,)
         self.scales = {}
         self.collect_scales()

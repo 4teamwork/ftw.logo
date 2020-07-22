@@ -5,7 +5,7 @@ Changelog
 1.0.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix logoconfig mobile instance variable name to match the mobile logo scale name. [mathias.leimgruber]
 
 
 1.0.4 (2020-01-09)
